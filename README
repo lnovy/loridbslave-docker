@@ -14,9 +14,9 @@ docker start loridbslave
 
 UPGRADE:
 docker build --no-cache=true -t loridbslave .
-docker stop loridsblave
+docker stop loridbslave
 docker rm loridbslave
-docker run -d --name loridbslave -v /var/lib/docker/data/loridbslave:/var/lib/mysql loridbslave
+docker run --restart=always -d --name loridbslave -v /var/lib/docker/data/loridbslave:/var/lib/mysql loridbslave
 
 MYSQL CONSOLE:
 docker exec -ti loridbslave mysql
