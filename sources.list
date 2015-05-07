@@ -1,0 +1,19 @@
+deb http://ftp.debian.org/debian/ squeeze main contrib non-free
+deb-src http://ftp.debian.org/debian/ squeeze main contrib non-free
+
+deb http://security.debian.org/ squeeze/updates main contrib non-free
+deb-src http://security.debian.org/ squeeze/updates main contrib non-free
+
+deb http://http.debian.net/debian/ squeeze-lts main contrib non-free
+deb-src http://http.debian.net/debian/ squeeze-lts main contrib non-free
+
+
+# squeeze-updates, previously known as 'volatile'
+deb http://ftp.debian.org/debian/ squeeze-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ squeeze-updates main contrib non-free
+
+deb http://backports.debian.org/debian-backports squeeze-backports main contrib non-free
+deb-src http://backports.debian.org/debian-backports squeeze-backports main contrib non-free
+
+deb http://packages.dotdeb.org squeeze all 
+deb-src http://packages.dotdeb.org squeeze all
