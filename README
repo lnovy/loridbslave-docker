@@ -1,0 +1,22 @@
+This container is used internally by Czech pirate party, nothing to see here.
+
+BUILD:
+docker build -t loridbslave .
+
+START NEW:
+docker run -d --name loridbslave -v /var/lib/docker/data/loridbslave:/var/lib/mysql loridbslave
+
+STOP RUNNING:
+docker stop loridbslave
+
+RESTART STOPPED:
+docker start loridbslave
+
+UPGRADE:
+docker build --no-cache=true -t loridbslave .
+docker stop loridsblave
+docker rm loridbslave
+docker run -d --name loridbslave -v /var/lib/docker/data/loridbslave:/var/lib/mysql loridbslave
+
+MYSQL CONSOLE:
+docker exec -ti loridbslave mysql

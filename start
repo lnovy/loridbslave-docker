@@ -17,7 +17,10 @@ cat > /etc/mysql/conf.d/mysql-pirati.cnf <<EOF
 bind = 0.0.0.0
 server-id = 2
 log_bin                 = /var/log/mysql/mysql-bin.log
-binlog_do_db            = newdatabase
+binlog_do_db            = pirati
+binlog_do_db            = etherpad
+binlog_do_db            = petice_konopi
+binlog_do_db            = piznam
 
 [client]
 ssl-ca=/etc/mysql/ca-cert.pem
